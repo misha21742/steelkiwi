@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form class="form-signin" method="post" action="/signup">
+            <h2 class="form-signin-heading">Registration</h2>
+            <input type="text" class="form-control" name="username" placeholder="username" required="" autofocus="" />
+            <input type="password" class="form-control" name="password" placeholder="password" required=""/>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+            <br>
+        </form>
+        <form class="form-signin" method="post" action="/signin">
+            <h2 class="form-signin-heading">Login</h2>
+            <input type="text" class="form-control" name="username" placeholder="username" required="" autofocus="" />
+            <input type="password" class="form-control" name="password" placeholder="password" required=""/>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+    </div>
+</body>
+</html>
