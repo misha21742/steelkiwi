@@ -12,11 +12,6 @@ exports.getHome = function(req,res){
     res.render('index.ejs');
 };
 
-exports.getProfile = function(req,res){
-    console.log(req.user);
-    res.json({token: req.user.token})
-};
-
 exports.signup = function(req,res){
 
     req.assert('username', 'id-not-valid').notEmpty();
@@ -92,7 +87,7 @@ exports.signin = function(req,res){
 };
 
 exports.getInfo = function(req,res){
-    res.json({id: req.user.id, idType: req.user.idType})
+    res.json({id: req.user.id, idType: req.user.idType, newToken: req.user.token})
 };
 
 exports.getLatency = function(req,res){

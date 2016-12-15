@@ -11,7 +11,6 @@ module.exports = function(app) {
     app.use(homeController.checkToken);
 
     app.get('/logout', homeController.logout);
-    app.get('/profile', homeController.getProfile);
     app.get('/info', homeController.getInfo);
     app.get('/latency', homeController.getLatency);
 
